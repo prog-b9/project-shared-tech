@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Google Font Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>منير</title>
+  </head>
+  <body>
+    <!-- start navbar -->
+    <nav class="bg-white">
+      <div
+        class="container flex items-center justify-between flex-wrap relative"
+      >
+        <div class="flex items-center flex-wrap">
+          <div class="border-l px-5 w-[128px]">
+            <img src="./assets/logo.png" class="" />
+          </div>
+          <ul class="gap-5 px-5 text-sm flex flex-wrap">
+            <li
+              class="hover:text-[var(--blue)] cursor-pointer transition-all duration-100"
+            >
+              <a>الرئيسة</a>
+            </li>
+            <li
+              class="hover:text-[var(--blue)] cursor-pointer transition-all duration-100"
+            >
+              <a>الأسعار</a>
+            </li>
+            <li
+              class="hover:text-[var(--blue)] cursor-pointer transition-all duration-100"
+            >
+              <a>اتصل بنا</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center flex-wrap gap-3">
+          <div class="w-[22px]">
+            <img src="./assets/notify.png" />
+          </div>
+          <div
+            class="w-12 border-2 border-[var(--light-gray)] rounded-full icon-user cursor-pointer"
+          >
+            <img src="./assets/profile.png" />
+          </div>
+        </div>
+        <!-- start dropdown list -->
+        <div
+          class="box-dropdownlist bg-white max-w-full sm:w-[250px] absolute left-[10px] top-16 rounded-lg"
+        >
+          <div
+            class="bg-[var(--light-gray)] flex items-center gap-3 rounded-t-lg p-4"
+          >
+            <div class="w-12 border-2 border-white rounded-full">
+              <img src="./assets/profile.png" />
+            </div>
+            <div class="text-xs">
+              <div>سيف الدين بروال</div>
+              <div class="text-[var(--gray)] mt-1">SeyfDesigner@munner.sa</div>
+            </div>
+          </div>
+          <ul class="text-sm">
+            <li class="flex gap-2 items-center p-3">
+              <div class="w-[20px]">
+                <img src="./assets/apps.png" />
+              </div>
+              <span class="text-xs">لوحة التحكم</span>
+            </li>
+            <li class="flex gap-2 items-center p-3">
+              <div class="w-[20px]">
+                <img src="./assets/user.png" />
+              </div>
+              <span class="text-xs">الملف الشخصي</span>
+            </li>
+            <li class="flex gap-2 items-center p-3">
+              <div class="w-[20px]">
+                <img src="./assets/crown.png" />
+              </div>
+              <span class="text-xs">اشتراكاتي</span>
+            </li>
+            <hr class="border-[var(--gray-100)]" />
+            <li class="flex gap-2 items-center p-3">
+              <div class="w-[20px]">
+                <img src="./assets/exit.png" />
+              </div>
+              <span class="text-xs">تسجيل الخروج</span>
+            </li>
+          </ul>
+        </div>
+        <!-- end dropdown list -->
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start tabs -->
+    <section
+      class="bg-gradient-to-r from-[var(--blue)] to-[var(--purple)] p-2 sm:p-4"
+    >
+      <ul class="container flex flex-wrap gap-10 text-xs">
+        <li class="flex gap-2 items-center text-white relative">
+          <div class="w-[19px]">
+            <img src="./assets/dashboard.png" />
+          </div>
+          <div>بيانات عامة</div>
+          <div class="tabs-line"></div>
+        </li>
+        <li class="flex gap-2 items-center text-white">
+          <div class="w-[19px]">
+            <img src="./assets/flash-sale.png" />
+          </div>
+          <div>قائمة الاشتراكات</div>
+        </li>
+        <li class="flex gap-2 items-center text-white">
+          <div class="w-[19px]">
+            <img src="./assets/diagram.png" />
+          </div>
+          <div>قائمة عمليات الفحص</div>
+        </li>
+        <li class="flex gap-2 items-center text-white">
+          <div class="w-[19px]">
+            <img src="./assets/crown-white.png" />
+          </div>
+          <div>اشتراكاتي</div>
+        </li>
+      </ul>
+    </section>
+    <!-- end tabs -->
+    <!-- start overview states -->
+    <section class="container mt-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <!-- card one -->
+        <div
+          class="bg-white p-3 md:p-6 rounded-xl flex justify-between gap-3 items-center flex-wrap"
+        >
+          <div class="flex items-center gap-3 flex-wrap">
+            <div
+              class="w-[50px] h-[50px] p-3 rounded-full bg-[var(--orange)] flex items-center justify-center"
+            >
+              <img src="./assets/laptop.png" />
+            </div>
+            <div>
+              <div class="font-bold text-sm">عدد المواقع</div>
+              <div class="flex items-center flex-wrap gap-3 mt-4">
+                <div class="text-5xl font-semibold">13</div>
+                <div class="text-[var(--gray)] text-sm mt-3">موقع مشترك</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[40px] h-[40px] rounded-full flex items-center p-2.5 justify-center border border-[var(--gray-100)] mb-2 sm:mb-10"
+          >
+            <img src="./assets/up-left-arrow.png" />
+          </div>
+        </div>
+        <!-- card two -->
+        <div
+          class="bg-white p-3 md:p-6 rounded-xl flex justify-between gap-3 items-center flex-wrap"
+        >
+          <div class="flex items-center gap-3 flex-wrap">
+            <div
+              class="w-[50px] h-[50px] p-3 rounded-full bg-[var(--light-blue)] flex items-center justify-center"
+            >
+              <img src="./assets/crown-white.png" />
+            </div>
+            <div>
+              <div class="font-bold text-sm">عدد الاشتراكات</div>
+              <div class="flex items-center flex-wrap gap-3 mt-4">
+                <div class="text-5xl font-semibold">3</div>
+                <div class="text-[var(--gray)] text-sm mt-3">اشتراك مدفوع</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[40px] h-[40px] rounded-full flex items-center p-2.5 justify-center border border-[var(--gray-100)] mb-2 sm:mb-10"
+          >
+            <img src="./assets/up-left-arrow.png" />
+          </div>
+        </div>
+        <!-- card three -->
+        <div
+          class="bg-white p-3 md:p-6 rounded-xl flex justify-between gap-3 items-center flex-wrap"
+        >
+          <div class="flex items-center gap-3 flex-wrap">
+            <div
+              class="w-[50px] h-[50px] p-3 rounded-full bg-[var(--light-purple)] flex items-center justify-center"
+            >
+              <img src="./assets/bug.png" />
+            </div>
+            <div>
+              <div class="font-bold text-sm">الاخطاء</div>
+              <div class="flex items-center flex-wrap gap-3 mt-4">
+                <div class="text-5xl font-semibold">12</div>
+                <div class="text-[var(--gray)] text-sm mt-3">عدد الاخطاء</div>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div
+            class="w-[40px] h-[40px] rounded-full flex items-center p-2.5 justify-center border border-[var(--gray-100)] mb-2 sm:mb-10"
+          >
+            <img src="./assets/up-left-arrow.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end overview states -->
+    <!-- start table one -->
+    <section class="container">
+      <div class="bg-white rounded-xl mt-5">
+        <!-- header -->
+        <div class="flex justify-between items-center relative p-3 md:p-6 py-7">
+          <h3 class="font-bold">قائمة الاشتراكات</h3>
+          <div>
+            <!-- <div class="hover-box">
+              <div class="box-content">
+                 ali
+              </div>
+            </div> -->
+            <button
+              onmouseover="changeTextTable1()"
+              onmouseout="restoreTextTable1()"
+              class="btn justify-center bg-[var(--black)] text-white text-sm flex items-center gap-2"
+            >
+              <span class="text-xs text-scale text-scale1">شاهد الكل</span>
+              <div class="w-[12px] h-[12px] text-scale1">
+                <img src="./assets/arrow-left.png" />
+              </div>
+            </button>
+          </div>
+        </div>
+        <!-- table content-->
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead class="bg-[var(--gray-200)]">
+              <tr class="text-xs text-right">
+                <th class="p-3">#</th>
+                <th class="p-3">العنوان</th>
+                <th class="p-3">الباقة</th>
+                <th class="p-3">الاشتراك القادم</th>
+                <th class="p-3">متبقي للباقة</th>
+                <th class="p-3">حالة الاشتراك</th>
+                <th class="p-3">الصفحات المستهلكة</th>
+                <th class="p-3">الفحص الشهري</th>
+                <th class="p-3">الإجراءات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-xs border-b border-[var(--gray-100)]">
+                <td class="p-3">1</td>
+                <td class="p-3">جامعة الأميرة نورة بنت عبد الرحمن</td>
+                <td class="p-3">الباقة الاحترافية (سنوي)</td>
+                <td class="p-3">2 أكتوبر 2024</td>
+                <td class="p-3">256 يوم</td>
+                <td class="p-3">
+                  <div
+                    class="rounded-full bg-[var(--light-green)] p-2 px-3 flex items-center justify-center gap-2"
+                  >
+                    <span
+                      class="w-1.5 h-1.5 bg-[var(--green)] rounded-full"
+                    ></span>
+                    <span class="text-xs font-bold">نشط</span>
+                  </div>
+                </td>
+                <td class="p-3 w-2/12">
+                  <div>
+                    <div class="flex justify-between items-center text-xs">
+                      <div class="text-[var(--gray)] font-normal mb-1">
+                        400k / 275653
+                      </div>
+                      <div class="font-bold">75%</div>
+                    </div>
+
+                    <div
+                      class="w-full bg-[var(--light-gray)] rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-[var(--green)] h-2.5 rounded-full"
+                        style="width: 75%"
+                      ></div>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-3">
+                  <div class="flex items-center justify-center">
+                    <div
+                      class="inline-flex items-center justify-center overflow-hidden rounded-full relative"
+                    >
+                      <svg class="w-20 h-20">
+                        <circle
+                          class="text-[var(--light-gray)]"
+                          stroke-width="7"
+                          stroke="currentColor"
+                          fill="transparent"
+                          r="25"
+                          cx="35"
+                          cy="35"
+                        />
+                        <circle
+                          class="text-[var(--green)]"
+                          stroke-width="7"
+                          stroke-dasharray="100"
+                          stroke-dashoffset="80"
+                          stroke-linecap="round"
+                          stroke="currentColor"
+                          fill="transparent"
+                          r="25"
+                          cx="35"
+                          cy="35"
+                        />
+                      </svg>
+                      <span
+                        class="absolute text-xs text-center font-bold"
+                        style="
+                          top: 45%;
+                          left: 45%;
+                          transform: translate(-50%, -50%);
+                        "
+                        >10/6</span
+                      >
+                      <!-- Replace with your desired static percentage -->
+                    </div>
+                  </div>
+                </td>
+                <td class="p-3">
+                  <div class="flex items-center gap-2">
+                    <div>
+                      <button
+                        class="rounded-full p-2 w-[77px] justify-center bg-[var(--blue)] text-white text-sm flex items-center gap-2 transition-all duration-150"
+                      >
+                        <span class="text-xs"> التفاصيل </span>
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        class="rounded-full p-2 w-[95px] justify-center border border-[var(--gray)] text-[var(--gray)] text-sm flex items-center gap-2 transition-all duration-150"
+                      >
+                        <div class="w-[15px] h-[15px]">
+                          <img src="./assets/setting.png" />
+                        </div>
+                        <span class="text-xs"> إعدادات </span>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="text-xs border-b border-[var(--gray-100)]">
+                <td class="p-3">2</td>
+                <td class="p-3">شركة التقنيات المشتركة SharedTech</td>
+                <td class="p-3">الباقة الاحترافية (سنوي)</td>
+                <td class="p-3">6 جانفي 2024</td>
+                <td class="p-3">136 يوم</td>
+                <td class="p-3">
+                  <div
+                    class="rounded-full bg-[var(--light-red-orange)] p-2 px-3 flex items-center justify-center gap-2"
+                  >
+                    <span
+                      class="w-1.5 h-1.5 bg-[var(--red-orange)] rounded-full"
+                    ></span>
+                    <span class="text-xs font-bold">منتهي</span>
+                  </div>
+                </td>
+                <td class="p-3 w-2/12">
+                  <div>
+                    <div class="flex justify-between items-center text-xs">
+                      <div class="text-[var(--gray)] font-normal mb-1">
+                        400k / 400000
+                      </div>
+                      <div class="font-bold">100%</div>
+                    </div>
+
+                    <div
+                      class="w-full bg-[var(--light-gray)] rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-[var(--red-orange)] h-2.5 rounded-full"
+                        style="width: 100%"
+                      ></div>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-3">
+                  <div class="flex items-center justify-center">
+                    <div
+                      class="inline-flex items-center justify-center overflow-hidden rounded-full relative"
+                    >
+                      <svg class="w-20 h-20">
+                        <circle
+                          class="text-[var(--light-gray)]"
+                          stroke-width="7"
+                          stroke="currentColor"
+                          fill="transparent"
+                          r="25"
+                          cx="35"
+                          cy="35"
+                        />
+                        <circle
+                          class="text-[var(--green)]"
+                          stroke-width="7"
+                          stroke-dasharray="100"
+                          stroke-dashoffset="80"
+                          stroke-linecap="round"
+                          stroke="currentColor"
+                          fill="transparent"
+                          r="25"
+                          cx="35"
+                          cy="35"
+                        />
+                      </svg>
+                      <span
+                        class="absolute text-xs text-center font-bold"
+                        style="
+                          top: 45%;
+                          left: 45%;
+                          transform: translate(-50%, -50%);
+                        "
+                        >10/8</span
+                      >
+                      <!-- Replace with your desired static percentage -->
+                    </div>
+                  </div>
+                </td>
+                <td class="p-3">
+                  <div class="flex items-center gap-2">
+                    <div>
+                      <button
+                        class="rounded-full p-2 w-[77px] justify-center bg-[var(--blue)] text-white text-sm flex items-center gap-2 transition-all duration-150"
+                      >
+                        <span class="text-xs"> التفاصيل </span>
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        class="rounded-full p-2 w-[95px] justify-center bg-[var(--light-blue)] text-white text-sm flex items-center gap-2 transition-all duration-150"
+                      >
+                        <div class="w-[15px] h-[15px]">
+                          <img src="./assets/crown-white.png" />
+                        </div>
+                        <span class="text-xs"> تجديد </span>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="text-xs">
+                <td class="p-3">3</td>
+                <td class="p-3">مركز الملك سلمان لأبحاث الإعاقة</td>
+                <td class="p-3">الباقة الاحترافية (سنوي)</td>
+                <td class="p-3">26 أكتوبر 2024</td>
+                <td class="p-3">0 يوم</td>
+                <td class="p-3">
+                  <div
+                    class="rounded-full bg-[var(--light-green)] p-2 px-3 flex items-center justify-center gap-2"
+                  >
+                    <span
+                      class="w-1.5 h-1.5 bg-[var(--green)] rounded-full"
+                    ></span>
+                    <span class="text-xs font-bold">نشط</span>
+                  </div>
+                </td>
+                <td class="p-3 w-2/12">
+                  <div>
+                    <div class="flex justify-between items-center text-xs">
+                      <div class="text-[var(--gray)] font-normal mb-1">
+                        50k / 18349
+                      </div>
+                      <div class="font-bold">39%</div>
+                    </div>
+
+                    <div
+                      class="w-full bg-[var(--light-gray)] rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-[var(--green)] h-2.5 rounded-full"
+                        style="width: 39%"
+                      ></div>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-3">
+                  <div class="flex items-center justify-center">
+                    <div
+                      class="inline-flex items-center justify-center overflow-hidden rounded-full relative"
+                    >
+                      <svg class="w-20 h-20">
+                        <circle
+                          class="text-[var(--light-gray)]"
+                          stroke-width="7"
+                          stroke="currentColor"
+                          fill="transparent"
+                          r="25"
+                          cx="35"
+                          cy="35"
+                        />
+                        <circle
+                          class="text-[var(--yellow)]"
+                          stroke-width="7"
+                          stroke-dasharray="0"
+                          stroke-dashoffset="350"
+                          stroke-linecap="round"
+                          stroke="currentColor"
+                          fill="transparent"
+                          r="25"
+                          cx="35"
+                          cy="35"
+                        />
+                      </svg>
+                      <span
+                        class="absolute text-xs text-center font-bold"
+                        style="
+                          top: 45%;
+                          left: 45%;
+                          transform: translate(-50%, -50%);
+                        "
+                        >10/10</span
+                      >
+                      <!-- Replace with your desired static percentage -->
+                    </div>
+                  </div>
+                </td>
+                <td class="p-3">
+                  <div class="flex items-center gap-2">
+                    <div>
+                      <button
+                        class="rounded-full p-2 w-[77px] justify-center bg-[var(--blue)] text-white text-sm flex items-center gap-2 transition-all duration-150"
+                      >
+                        <span class="text-xs"> التفاصيل </span>
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        class="rounded-full p-2 w-[95px] justify-center border border-[var(--gray)] text-[var(--gray)] text-sm flex items-center gap-2 transition-all duration-150"
+                      >
+                        <div class="w-[15px] h-[15px]">
+                          <img src="./assets/setting.png" />
+                        </div>
+                        <span class="text-xs"> إعدادات </span>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- end table one -->
+    <!-- start table two -->
+    <section class="container">
+      <div class="bg-white rounded-xl mt-5">
+        <!-- header -->
+        <div class="flex justify-between items-center relative p-3 md:p-6 py-7">
+          <h3 class="font-bold">قائمة فحص المواقع</h3>
+          <div>
+            <!-- <div class="hover-box">
+              <div class="box-content">
+                 ali
+              </div>
+            </div> -->
+            <button
+              onmouseover="changeTextTable2()"
+              onmouseout="restoreTextTable2()"
+              class="btn justify-center bg-[var(--black)] text-white text-sm flex items-center gap-2"
+            >
+              <span class="text-xs text-scale2">شاهد الكل</span>
+              <div class="w-[12px] h-[12px] text-scale2">
+                <img src="./assets/arrow-left.png" />
+              </div>
+            </button>
+          </div>
+        </div>
+        <!-- table content-->
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead class="bg-[var(--gray-200)]">
+              <tr class="text-xs text-right">
+                <th class="p-3">#</th>
+                <th class="p-3">الموقع</th>
+                <th class="p-3">تاريخ الفحص</th>
+                <th class="p-3">نسبة التوافق</th>
+                <th class="p-3">مؤشر التحسين</th>
+                <th class="p-3">الإجراءات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-xs border-b border-[var(--gray-100)]">
+                <td class="p-4">1</td>
+                <td class="p-4">www.munner.sa</td>
+                <td class="p-4">الأربعاء 2023/12/6 - 22:56</td>
+                <td class="p-4">76%</td>
+                <td class="p-4">
+                  <div
+                    class="rounded-full bg-[var(--light-green)] p-2 px-3 flex items-center justify-center gap-2"
+                  >
+                    <span class="text-xs font-bold">13%</span>
+                    <div class="w-[11px] h-[11px]">
+                      <img src="./assets/up-right-arrow.png" />
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4">
+                  <div class="flex items-center gap-2">
+                    <div>
+                      <button
+                        class="rounded-full relative p-2 w-[151px] justify-center bg-[var(--blue)] text-white text-sm flex items-center gap-2 transition-all duration-150"
+                      >
+                        <div class="w-[15px] h-[15px]">
+                          <img src="./assets/download.png" />
+                        </div>
+                        <span class="text-xs ml-4"> تحميل التقرير </span>
+                        <span> </span>
+                        <div
+                          class="absolute left-0 z-20 px-3 h-full rounded-l-full flex items-center justify-center border-r border-gray-600/30"
+                        >
+                          <img
+                            src="./assets/arrow-down.png"
+                            class="w-[10px] h-[10px]"
+                          />
+                        </div>
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        class="rounded-full p-2 w-[95px] justify-center border border-[var(--gray)] text-[var(--gray)] text-sm flex items-center gap-2 transition-all duration-150"
+                      >
+                        <div class="w-[15px] h-[15px]">
+                          <img src="./assets/eye.png" />
+                        </div>
+                        <span class="text-xs"> معاينة </span>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="text-xs border-b border-[var(--gray-100)]">
+                <td class="p-4">2</td>
+                <td class="p-4">dev.munner.sa</td>
+                <td class="p-4">الاثنين 2023/11/27 - 18:21</td>
+                <td class="p-4">63%</td>
+                <td class="p-4">
+                  <div
+                    class="rounded-full bg-[var(--light-red-orange)] p-2 px-3 flex items-center justify-center gap-2"
+                  >
+                    <span class="text-xs font-bold">8%</span>
+                    <div class="w-[11px] h-[11px]">
+                      <img src="./assets/arrow-down-right.png" />
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4">
+                  <div class="flex items-center gap-2">
+                    <div>
+                      <button
+                        class="rounded-full relative p-2 w-[151px] justify-center bg-[var(--blue)] text-white text-sm flex items-center gap-2 transition-all duration-150"
+                      >
+                        <div class="w-[15px] h-[15px]">
+                          <img src="./assets/download.png" />
+                        </div>
+                        <span class="text-xs ml-4"> تحميل التقرير </span>
+                        <span> </span>
+                        <div
+                          class="absolute left-0 z-20 px-3 h-full rounded-l-full flex items-center justify-center border-r border-gray-600/30"
+                        >
+                          <img
+                            src="./assets/arrow-down.png"
+                            class="w-[10px] h-[10px]"
+                          />
+                        </div>
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        class="rounded-full p-2 w-[95px] justify-center border border-[var(--gray)] text-[var(--gray)] text-sm flex items-center gap-2 transition-all duration-150"
+                      >
+                        <div class="w-[15px] h-[15px]">
+                          <img src="./assets/eye.png" />
+                        </div>
+                        <span class="text-xs"> معاينة </span>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="text-xs">
+                <td class="p-4">3</td>
+                <td class="p-4">blog.munner.sa</td>
+                <td class="p-4">السبت 2023/11/18 - 20:47</td>
+                <td class="p-4">76%</td>
+                <td class="p-4">
+                  <div
+                    class="rounded-full bg-[var(--light-green)] p-2 px-3 flex items-center justify-center gap-2"
+                  >
+                    <span class="text-xs font-bold">43%</span>
+                    <div class="w-[11px] h-[11px]">
+                      <img src="./assets/up-right-arrow.png" />
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4">
+                  <div class="flex items-center gap-2">
+                    <div>
+                      <button
+                        class="rounded-full relative p-2 w-[151px] justify-center bg-[var(--blue)] text-white text-sm flex items-center gap-2 transition-all duration-150"
+                      >
+                        <div class="w-[15px] h-[15px]">
+                          <img src="./assets/download.png" />
+                        </div>
+                        <span class="text-xs ml-4"> تحميل التقرير </span>
+                        <span> </span>
+                        <div
+                          class="absolute left-0 z-20 px-3 h-full rounded-l-full flex items-center justify-center border-r border-gray-600/30"
+                        >
+                          <img
+                            src="./assets/arrow-down.png"
+                            class="w-[10px] h-[10px]"
+                          />
+                        </div>
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        class="rounded-full p-2 w-[95px] justify-center border border-[var(--gray)] text-[var(--gray)] text-sm flex items-center gap-2 transition-all duration-150"
+                      >
+                        <div class="w-[15px] h-[15px]">
+                          <img src="./assets/eye.png" />
+                        </div>
+                        <span class="text-xs"> معاينة </span>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- end table two -->
+    <!-- start footer -->
+    <footer class="bg-[var(--black)] p-5 mt-5">
+      <div
+        class="container text-[var(--gray-100)] flex justify-center sm:justify-between items-center flex-wrap gap-4 text-xs"
+      >
+        <div>© جميع الحقوق محفوظة لمنير 2023</div>
+        <ul class="flex list-disc gap-5">
+          <li class="hover:underline list-none">الشروط والأحكام</li>
+          <li class="hover:underline">سياسة الخصوصية</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
